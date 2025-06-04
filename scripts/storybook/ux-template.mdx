@@ -1,0 +1,23 @@
+## :jigsaw: Component: <MyButton />
+A shared button component used in actions requiring permission-aware behavior.
+This component renders a disabled state with contextual feedback when the user lacks edit permissions.
+---
+### :sparkles: Usage Guidelines
+- Use when triggering critical or primary actions (e.g., “Create”, “Delete”).
+- Use disabledReason to explain why the action is not available.
+- Always show the button, even if disabled, to improve discoverability.
+---
+### :gear: Props Overview
+| Prop            | Type       | Required | Description                                  |
+|-----------------|------------|----------|----------------------------------------------|
+| label         | string   | :white_check_mark:       | The text displayed on the button.            |
+| disabled      | boolean  | :x:       | Whether the button is disabled.              |
+| disabledReason| string   | :x:       | Tooltip or hint explaining why it’s disabled.|
+---
+### :link: Related References
+- :blue_book: Storybook: <MyButton />
+- :mag: Pattern: Permission-Denied Actions
+- :test_tube: Percy Snapshot
+---
+### :test_tube: Visual Example
+!Button preview

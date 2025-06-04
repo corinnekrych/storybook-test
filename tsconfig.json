@@ -1,0 +1,41 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/vibe-storybook-e2e"
+    },
+    {
+      "path": "./apps/vibe-storybook"
+    },
+    {
+      "path": "./design-system"
+    },
+    {
+      "path": "./libs/atoms"
+    },
+    {
+      "path": "./libs/molecules"
+    },
+    {
+      "path": "./libs/organisms"
+    },
+    {
+      "path": "./libs/templates"
+    },
+    {
+      "path": "./libs/pages"
+    },
+    {
+      "path": "./libs/design-system"
+    }
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "node10",
+      "customConditions": null
+    }
+  }
+}
